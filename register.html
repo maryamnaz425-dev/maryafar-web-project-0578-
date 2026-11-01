@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Maryafar – Register</title>
+  <link rel="stylesheet" href="css/register.css">
+</head>
+<body>
+  <header>
+    <nav class="reg-nav">
+      <div class="logo">Maryafar</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="media.html">Media</a></li>
+        <li><a href="register.html">Register</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="form-wrapper">
+    <h1>Create Your Traveler Profile</h1>
+    <p class="form-subtitle">Join Maryafar to start planning your next adventure.</p>
+
+    <form action="#" method="post">
+
+      <fieldset>
+        <legend>Personal Info</legend>
+
+        <div class="input-group">
+          <label for="fullname">Full Name</label>
+          <input type="text" id="fullname" name="fullname" placeholder="Maryam Naz" required minlength="3" maxlength="40">
+        </div>
+
+        <div class="input-group">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="email" placeholder="maryam@example.com" required>
+        </div>
+
+        <div class="input-group">
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password" placeholder="Min 8 characters" required minlength="8">
+        </div>
+        <div class="input-group">
+          <label for="country">Country</label>
+          <input type="text" id="country" name="country" value="Pakistan" readonly>
+        </div>
+
+        <div class="input-group">
+          <label for="profile-pic">Profile Picture</label>
+          <input type="file" id="profile-pic" name="profile-pic" accept="image/*">
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Trip Details</legend>
+
+        <div class="input-group">
+          <label for="start-date">Travel Start Date</label>
+          <input type="date" id="start-date" name="start-date" required>
+        </div>
+
+        <div class="input-group">
+          <label for="travelers">Number of Travelers</label>
+          <input type="number" id="travelers" name="travelers" min="1" max="20" value="2" required>
+        </div>
+
+        <div class="input-group">
+          <label for="destination">Preferred Destination</label>
+          <select id="destination" name="destination" required>
+            <option value="" disabled>Choose a destination</option>
+            <option value="hunza" selected>Hunza Valley</option>
+            <option value="skardu">Skardu</option>
+            <option value="istanbul">Istanbul</option>
+          </select>
+        </div>
+
+        <div class="input-group">
+          <label for="call-time">Preferred Agent Call Time</label>
+          <input type="time" id="call-time" name="call-time">
+        </div>
+
+        <div class="input-group">
+          <label for="budget">Budget (PKR)</label>
+          <input type="range" id="budget" name="budget" min="10000" max="500000" step="5000" value="50000">
+        </div>
+
+        <div class="input-group">
+          <label for="agent">Assigned Agent</label>
+          <input type="text" id="agent" name="agent" value="Assigned after booking" disabled>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Preferences</legend>
+
+        <div class="input-group">
+          <label for="social-link">Instagram or Blog Link (Optional)</label>
+          <input type="url" id="social-link" name="social-link" placeholder="https://instagram.com/yourprofile">
+        </div>
+
+        <div class="input-group">
+          <label for="fav-color">Favourite Colour for Trip Card</label>
+          <input type="color" id="fav-color" name="fav-color" value="#0f766e">
+        </div>
+
+        <div class="radio-group">
+          <p class="group-label">Trip Type:</p>
+          <label><input type="radio" name="trip-type" value="family" checked> Family</label>
+          <label><input type="radio" name="trip-type" value="friends"> Friends</label>
+          <label><input type="radio" name="trip-type" value="solo"> Solo</label>
+          <label><input type="radio" name="trip-type" value="honeymoon"> Honeymoon</label>
+        </div>
+
+        <div class="checkbox-group">
+          <p class="group-label">Interests:</p>
+          <label><input type="checkbox" name="interests" value="adventure"> Adventure</label>
+          <label><input type="checkbox" name="interests" value="food"> Food</label>
+          <label><input type="checkbox" name="interests" value="history"> History</label>
+        </div>
+
+        <div class="checkbox-group" style="margin-top: 15px;">
+          <label><input type="checkbox" name="terms" required> I agree to the terms and conditions</label>
+        </div>
+
+        <div class="input-group" style="margin-top: 15px;">
+          <label for="requests">Special Requests</label>
+          <textarea id="requests" name="requests" rows="3" maxlength="300" placeholder="Any special requests?"></textarea>
+        </div>
+      </fieldset>
+
+      <div class="button-group">
+        <button type="submit" class="submit-btn">Register Now</button>
+        <button type="reset" class="reset-btn">Reset Form</button>
+      </div>
+
+    </form>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Maryafar. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
